@@ -10,7 +10,7 @@
     "start": "hjs-dev-server src/config/webpack.app.js",
     "generate-component": "babel-node bin/generate.js component",
 
-    "selenium-setup": "node_modules/selenium-standalone/bin/selenium-standalone install",
+    "integration-setup": "$(npm bin)/selenium-standalone install",
     "test": "nightwatch -c test/integration/nightwatch.conf.js",
     "test-dev": "nightwatch -c test/integration/nightwatch.conf.js --env dev"
   },
