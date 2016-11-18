@@ -32,6 +32,14 @@
         "acceptSslCerts": true
       }
     },
+    "phantomjs" : {
+      "desiredCapabilities": {
+        "browserName": "phantomjs",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "phantomjs.binary.path": "$(npm bin)/phantomjs"
+      }
+    },
     "dev": {
       "launch_url": "http://localhost:3000"
     }

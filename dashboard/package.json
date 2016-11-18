@@ -9,10 +9,10 @@
     "lint": "eslint \"src/**\"",
     "start": "hjs-dev-server src/config/webpack.app.js",
     "generate-component": "babel-node bin/generate.js component",
-
     "integration-setup": "$(npm bin)/selenium-standalone install",
     "test": "nightwatch -c test/integration/nightwatch.conf.js",
-    "test-dev": "nightwatch -c test/integration/nightwatch.conf.js --env dev"
+    "test-dev": "nightwatch -c test/integration/nightwatch.conf.js --env dev",
+    "test-phantom": "nightwatch -c test/integration/nightwatch.conf.js --env phantomjs"
   },
   "author": "Chain",
   "license": "",
@@ -62,6 +62,7 @@
     "nightwatch": "0.9.9",
     "nock": "~4.0.0",
     "node-sass": "~3.8.0",
+    "phantomjs": "^2.1.7",
     "postcss-loader": "^1.1.0",
     "react-hot-loader": "~1.3.0",
     "resolve-url-loader": "~1.6.0",
